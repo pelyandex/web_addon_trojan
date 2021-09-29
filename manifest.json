@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "testiruem",
+    "description": "dada ya testiruyu",
+    "version": "0.0.1",
+    "author": "stas vodogrey",
+    "browser_action": {
+        "default_title": "Testirovanie",
+        "default_icon": "icon.jpeg",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [{
+        "matches":[
+            "<all_urls>"
+        ],
+        "js": ["content.js", "destroy.js"]
+    }],
+     "permissions": ["activeTab"]
+}
